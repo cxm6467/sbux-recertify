@@ -59,3 +59,24 @@ gem 'bootstrap', '4.0.0.alpha6'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+
+# Simple forms
+gem 'simple_form'
+
+# Users << Users
+gem 'devise' 
+
+# CarrierWave for pictures
+gem 'carrierwave' , '~> 1.0'
+
+# Figaro for the bs of envars
+gem 'figaro'
+
+# MiniMagik -- Pictureeees
+gem 'mini_magick'
+
+# new aws/carrier wave
+gem 'carrierwave-aws'
+
+#  Stripe payments
+gem 'stripe'

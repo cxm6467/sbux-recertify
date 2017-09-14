@@ -1,4 +1,5 @@
 <div class="booyah-box col-10 offset-1">
+  <br />
   <h4> Welcome, <%= current_user.email %></h4>
   <br />
   <br />
@@ -9,7 +10,7 @@
   <h1>Still Need To Test</h1>
       <ul>
       <% @partners.each do |partner| %>
-        <li><%= partner.first_name%>, <%= partner.last_name %></li>
+        <li><b><%= partner.first_name%> <%= partner.last_name %><b>  <%= link_to 'Remove', partner_path(partner), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn-sm btn-danger' %></li>
       <% end %>
       </ul>
   <hr />

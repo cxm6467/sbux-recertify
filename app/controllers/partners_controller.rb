@@ -8,6 +8,12 @@ class PartnersController < ApplicationController
    		redirect_to user_path(current_user)
 	end
 
+	def destroy
+    @partner = Partner.find(params[:id])
+
+    @partner.destroy
+    redirect_to user_path(current_user)
+  end
 	private
 
 	def partner_params

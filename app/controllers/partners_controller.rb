@@ -5,7 +5,7 @@ class PartnersController < ApplicationController
 
 	def create
 		Partner.create(partner_params)
-		redirect_to users_path(current_user)
+   		redirect_to user_path(current_user)
 	end
 
 	private

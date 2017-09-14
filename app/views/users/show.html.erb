@@ -7,6 +7,11 @@
   <br />
   <br />
   <h1>Still Need To Test</h1>
+      <ul>
+      <% @partners.each do |partner| %>
+        <li><%= partner.first_name%>, <%= partner.last_name %></li>
+      <% end %>
+      </ul>
   <hr />
   <br />
   <br />

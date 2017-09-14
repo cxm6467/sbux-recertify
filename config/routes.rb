@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :quizzes
   resources :questions
   resources :users, only: :show
-  resources :partners, onlu: [:create, :new, :show]
+  resources :partners, only: [:create, :new, :show]
 end

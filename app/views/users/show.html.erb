@@ -4,6 +4,9 @@
   <br />
   <br />
   <h1>Quizzes</h1>
+    <div class="col-12">
+    <%= link_to 'Create Quiz', new_quiz_path, class: 'btn btn-success' %>
+    </div>
   <hr />
   <br />
   <br />
@@ -13,6 +16,10 @@
         <li><b><%= partner.first_name%> <%= partner.last_name %><b>  <%= link_to 'Remove', partner_path(partner), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn-sm btn-danger' %></li>
       <% end %>
       </ul>
+      <br />
+      <div class="col-12">
+      <%= link_to 'Add Partner', new_partner_path, class: 'btn btn-success' %>
+    </div>
   <hr />
   <br />
   <br />

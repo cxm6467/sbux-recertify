@@ -4,7 +4,7 @@ class PartnersController < ApplicationController
 	end
 
 	def create
-		Partner.create(partner_params)
+		  Partner.create(partner_params)
    		redirect_to user_path(current_user)
 	end
 

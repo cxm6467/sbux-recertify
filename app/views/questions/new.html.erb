@@ -1,0 +1,9 @@
+<div class="booyah-box col-10 offset-1">
+  <h2>Create a Question</h2>
+  <%= simple_form_for @question do |f| %>
+    <%= f.input :question_name %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit "Create",class: 'btn btn-primary' %>
+  <% end %>
+</div>
